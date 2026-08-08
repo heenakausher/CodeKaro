@@ -1,0 +1,276 @@
+.head{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 40px;
+    flex-shrink: 0;
+    position: sticky;
+    top:30px;
+    left: 20px;
+}
+
+.sidebar1{
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+    width: 80px;    
+}
+
+.sidebar2{
+    display: flex;    
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;    
+}
+
+.sidebar3{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+
+}
+
+.A{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: auto;
+}
+
+.center1{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    gap: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center2{
+    border: solid 1px lightgray;
+    border-radius: 100%;
+    height:100px;
+    width: 100px;
+    padding: 20px;
+}
+
+.center3{
+    display: flex;  
+    height:100px;
+    width: 100px;
+}
+
+.center5{
+    display: flex;
+    font-size: 11px;
+    font-weight: 1500;
+    letter-spacing: .5px;
+    align-items: center;
+    height:min-content;
+    cursor: pointer;
+    gap: 5px;
+    height: 30px;
+}
+
+.center8{
+    padding-bottom: 5px;
+    color: darkgray;
+}
+
+.center9{
+    color: rgba(0, 0, 0, 0.718);
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+.center10{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    height: 20px;
+}
+
+.center10 p{
+    margin: 0;
+}
+
+.center14{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.center15{
+    color: rgb(141, 140, 140);
+    font-size: small;
+}
+
+.center16{
+    font-size: small;
+}
+
+.center17{
+    display: flex;
+    font-size: 14px;
+    font-weight:600;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.center19{
+    color: black;
+}
+
+.center20{
+    display: flex;
+    font-size: small;
+    align-items: center;
+}
+
+.center21{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+
+.center22{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    margin-left: -8px;
+}
+
+.center23{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    margin-left: -8px;
+}
+
+.center24{
+    padding-left: 10px;
+}
+
+.center25{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.center26{
+    border-radius: 8px;
+    height: 40px;
+    width: 300px;
+    font-weight: 600;
+    background-color: #405de6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.center27{
+    border-radius: 8px;
+    height: 40px;
+    width: 300px;
+    font-weight: 600;
+    background-color: rgb(241, 241, 241);
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.center28{
+    border-radius: 8px;
+    height: 40px;
+    width: 40px;
+    font-weight: 600;
+    background-color: rgb(241, 241, 241);
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.center29{
+    display: flex;
+    border: solid 4px rgb(231, 230, 230);
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    position: relative; 
+    top: 40px;
+    left: 420px;
+    cursor: pointer; 
+}
+
+.center30{
+    display: flex;
+    height: 38px;
+    justify-content: center;
+}
+
+.center31{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 550;
+    color: rgb(54, 54, 54);
+    position: relative; 
+    top: 40px;
+    left: 433px;
+}
+
+.center32{
+    display: block;
+    color: rgb(181, 181, 181);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 137px;
+    position: relative;
+    top: 70px;
+    cursor: pointer;
+}
+
+.center33{
+    color: black;
+}
+
+.center34{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.center35{
+    display: flex;
+    gap:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: rgb(181, 181, 181);
+    justify-content: center;
+}
+
+.center36{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: rgb(181, 181, 181);
+}
