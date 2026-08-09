@@ -1,48 +1,47 @@
 .head{
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    /* flex-direction: row; */
+    /* width: 100%; */
     align-items: flex-start;
 }
 
 .sidebar{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 80px;
     width: 40px;
-    flex-shrink: 0;
     position: sticky;
     top:30px;
-    left: 20px;
+    margin-left: 10px;
     cursor: pointer;
 }
 
 .sidebar1{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap:35px;
-    width: 80px;    
 }
 
-.sidebar2{
-    display: flex;    
+.sidebar2{ 
     border-radius: 50%;
     height: 25px;
-    width: 25px;    
+    width: 25px;
 }
 
 .sidebar3{
     display: flex;
     flex-direction: column;
     gap:30px;
-
 }
 
 .A{
-    display: flex;
     flex: 1;
-    flex-direction: column;
-    height: auto;
+    min-width: 0; 
+    width: calc(100%-40px); 
+    margin-left: 25px;
 }
 
 .center1{
@@ -51,9 +50,15 @@
     padding-top: 40px;
     gap: 30px;
     font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .center2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: solid 1px lightgray;
     border-radius: 100%;
     height:100px;
@@ -62,18 +67,18 @@
 }
 
 .center3{
-    display: flex;  
+    display: flex;
     height:100px;
     width: 100px;
+    max-width: 100%;
 }
 
 .center5{
     display: flex;
     font-size: 11px;
-    font-weight: 1500;
+    font-weight: 700;
     letter-spacing: .5px;
     align-items: center;
-    height:min-content;
     cursor: pointer;
     gap: 5px;
     height: 30px;
@@ -100,18 +105,19 @@
     padding-top: 15px;
     padding-bottom: 20px;
     height: 20px;
+    flex-wrap: wrap;
 }
 
 .center10 p{
     margin: 0;
 }
 
-.center10 center12{
-    cursor: pointer;
+.center10 .center12{
+    cursor:pointer; 
 }
 
-.center12 center13{
-    cursor: pointer;
+.center12 .center13{
+    cursor:pointer;
 }
 
 .center14{
@@ -136,6 +142,7 @@
     gap: 15px;
     align-items: center;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 
 .center19{
@@ -146,12 +153,15 @@
     display: flex;
     font-size: small;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .center21{
     height: 35px;
     width: 35px;
     border-radius: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .center22{
@@ -177,28 +187,34 @@
     flex-direction: row;
     justify-content: center;
     gap: 5px;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .center26{
     border-radius: 8px;
     height: 40px;
     width: 300px;
+    max-width: 100%;
     font-weight: 600;
     background-color: #405de6;
     color: white;
     border: none;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .center27{
     border-radius: 8px;
     height: 40px;
     width: 300px;
+    max-width: 100%;
     font-weight: 600;
     background-color: rgb(241, 241, 241);
     color: black;
     border: none;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .center28{
@@ -210,47 +226,60 @@
     color: black;
     border: none;
     cursor: pointer;
+    flex-shrink:0; 
+}
+
+.B{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .center29{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.center29a{
+    display: flex;
     border: solid 4px rgb(231, 230, 230);
-    border-radius: 100%;
+    border-radius: 50%;
     align-items: center;
     justify-content: center;
     height: 80px;
     width: 80px;
-    position: relative; 
-    top: 40px;
-    left: 420px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .center30{
     display: flex;
     height: 38px;
     justify-content: center;
+    align-items: center;
 }
 
 .center31{
+    display: flex;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 550;
     color: rgb(54, 54, 54);
-    position: relative; 
-    top: 40px;
-    left: 433px;
+    justify-content: center;
+    align-items: center;
 }
 
 .center32{
-    display: block;
-    color: rgb(181, 181, 181);
     display: flex;
+    color: rgb(181, 181, 181);
     justify-content: center;
     align-items: center;
-    gap: 137px;
+    gap:10%;
     position: relative;
-    top: 70px;
+    flex-wrap: wrap;
     cursor: pointer;
 }
 
@@ -261,7 +290,18 @@
 .center34{
     display: flex;
     justify-content: center;
-    padding-top: 70px;
+    padding-top: 7px;  
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.center34 img{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+
 }
 
 .center35{
@@ -272,6 +312,7 @@
     color: rgb(181, 181, 181);
     justify-content: center;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 
 .center36{
@@ -283,6 +324,7 @@
     font-size: 11px;
     color: rgb(181, 181, 181);
     cursor: pointer;
+    flex-wrap: wrap;
 }
 
 .center37{
@@ -295,6 +337,8 @@
     position: fixed;
     right: 20px;
     bottom: 30px;
+    max-width: calc(100vw-40px);
+    box-sizing: border-box;
 }
 
 .center38{
@@ -317,6 +361,7 @@
     border-radius: 100%;
     padding: 7px 0px 7px 0px;
     align-items: center;
+    object-fit: cover;
 }
 
 .center41{
@@ -326,6 +371,7 @@
     border-radius: 100%;
     padding: 7px 0px 7px 0px;
     align-items: center;
+    object-fit: cover;
 }
 
 .center42{
@@ -336,5 +382,6 @@
     padding: 7px 0px 7px 0px;
     align-items: center;
     position: relative;
-    right: 7px
+    right: 7px;
+    object-fit: cover;
 }
