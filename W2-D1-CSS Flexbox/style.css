@@ -18,33 +18,33 @@
     cursor: pointer;
 }
 
-.sidebar1{
+.sidebartop{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:35px;
 }
 
-.sidebar2{ 
+.profilepic{ 
     border-radius: 50%;
     height: 25px;
     width: 25px;
 }
 
-.sidebar3{
+.sidebarbottom{
     display: flex;
     flex-direction: column;
     gap:30px;
 }
 
-.A{
+.page{
     flex: 1;
     min-width: 0; 
     width: calc(100%-40px); 
     margin-left: 25px;
 }
 
-.center1{
+.introsection{
     display: flex;
     justify-content: center;
     padding-top: 40px;
@@ -55,7 +55,7 @@
     box-sizing: border-box;
 }
 
-.center2{
+.pagelogo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,16 +64,17 @@
     height:100px;
     width: 100px;
     padding: 20px;
+    cursor: pointer;
 }
 
-.center3{
+.pagelogo1{
     display: flex;
     height:100px;
     width: 100px;
     max-width: 100%;
 }
 
-.center5{
+.pagename{
     display: flex;
     font-size: 11px;
     font-weight: 700;
@@ -84,18 +85,18 @@
     height: 30px;
 }
 
-.center8{
+.pagenamedots{
     padding-bottom: 5px;
     color: darkgray;
 }
 
-.center9{
+.pagename1{
     color: rgba(0, 0, 0, 0.718);
     font-size: 14px;
     letter-spacing: .5px;
 }
 
-.center10{
+.pagestats{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -108,34 +109,34 @@
     flex-wrap: wrap;
 }
 
-.center10 p{
+.pagestats p{
     margin: 0;
 }
 
-.center10 .center12{
+.pagestats .pagestats1{
     cursor:pointer; 
 }
 
-.center12 .center13{
+.pagestats .pagestats2{
     cursor:pointer;
 }
 
-.center14{
+.intro{
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.center15{
+.intro1{
     color: rgb(141, 140, 140);
     font-size: small;
 }
 
-.center16{
+.intro2{
     font-size: small;
 }
 
-.center17{
+.links{
     display: flex;
     font-size: 14px;
     font-weight:600;
@@ -145,18 +146,18 @@
     flex-wrap: wrap;
 }
 
-.center19{
+.threadlink{
     color: black;
 }
 
-.center20{
+.commons{
     display: flex;
     font-size: small;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.center21{
+.commons1{
     height: 35px;
     width: 35px;
     border-radius: 100%;
@@ -164,25 +165,25 @@
     flex-shrink: 0;
 }
 
-.center22{
+.commons2{
     height: 35px;
     width: 35px;
     border-radius: 100%;
     margin-left: -8px;
 }
 
-.center23{
+.commons3{
     height: 35px;
     width: 35px;
     border-radius: 100%;
     margin-left: -8px;
 }
 
-.center24{
+.commons4{
     padding-left: 10px;
 }
 
-.center25{
+.pagebuttons{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -191,7 +192,7 @@
     width: 100%;
 }
 
-.center26{
+.followbtn{
     border-radius: 8px;
     height: 40px;
     width: 300px;
@@ -204,7 +205,7 @@
     box-sizing: border-box;
 }
 
-.center27{
+.DMbtn{
     border-radius: 8px;
     height: 40px;
     width: 300px;
@@ -217,7 +218,7 @@
     box-sizing: border-box;
 }
 
-.center28{
+.similarbtn{
     border-radius: 8px;
     height: 40px;
     width: 40px;
@@ -229,14 +230,7 @@
     flex-shrink:0; 
 }
 
-.B{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.center29{
+.story{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -244,7 +238,7 @@
     cursor: pointer;
 }
 
-.center29a{
+.story1{
     display: flex;
     border: solid 4px rgb(231, 230, 230);
     border-radius: 50%;
@@ -255,14 +249,14 @@
     cursor: pointer;
 }
 
-.center30{
+.story2{
     display: flex;
     height: 38px;
     justify-content: center;
     align-items: center;
 }
 
-.center31{
+.story3{
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -272,7 +266,7 @@
     align-items: center;
 }
 
-.center32{
+.pagesections{
     display: flex;
     color: rgb(181, 181, 181);
     justify-content: center;
@@ -283,28 +277,32 @@
     cursor: pointer;
 }
 
-.center33{
+.pagesections1{
     color: black;
 }
 
-.center34{
+.posts{
     display: flex;
     justify-content: center;
-    padding-top: 7px;  
+    padding-top: 7px;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 1px;
     box-sizing: border-box;
     flex-wrap: wrap;
     box-sizing: border-box;
+    margin-bottom: 6%;
+    cursor: pointer;
 }
 
-.center34 img{
+.posts img{
     display: block;
-    width: 100%;
+    width: 20%;
     height: auto;
     max-width: 100%;
-
 }
 
-.center35{
+.footer1{
     display: flex;
     gap:15px;
     font-family: Arial, Helvetica, sans-serif;
@@ -315,7 +313,7 @@
     flex-wrap: wrap;
 }
 
-.center36{
+.footer2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,61 +325,58 @@
     flex-wrap: wrap;
 }
 
-.center37{
+.Msgbutton{
     display: flex;
     border-radius: 50px;
     gap:40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.496);
     border: none;
     background-color: white;
+    height: 8%;
+    width: 16%;
+    justify-content: space-between;
     position: fixed;
     right: 20px;
     bottom: 30px;
-    max-width: calc(100vw-40px);
     box-sizing: border-box;
 }
 
-.center38{
+.Msgbuttonicon{
     display: flex;
+    align-items: center;
     border-radius: 50px;
     align-items: center;
     gap:5px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;    
+    font-size: 16px;    
     padding-left: 15px;
-    padding-bottom: 7px;
-    padding-top: 7px;
-    padding-right: 7px;
+    /* padding-bottom: 7px; */
+    /* padding-top: 7px; */
+    /* padding-right: 7px; */
+    cursor: pointer;
 }
 
-.center40{
-    height: 20px;
-    width: 20px;
+.Msgbuttonimg1{
+    height: 25px;
+    width: 25px;
     margin-left: -8px;
     border-radius: 100%;
-    padding: 7px 0px 7px 0px;
+    position: relative;
+    top:25%;
     align-items: center;
-    object-fit: cover;
+    cursor: pointer;
 }
 
-.center41{
-    height: 20px;
-    width: 20px;
+.Msgbuttonimg2{
+    height: 25px;
+    width: 25px;
     margin-left: -8px;
     border-radius: 100%;
-    padding: 7px 0px 7px 0px;
-    align-items: center;
-    object-fit: cover;
-}
-
-.center42{
-    height: 20px;
-    width: 20px;
-    margin-left: -8px;
-    border-radius: 100%;
-    padding: 7px 0px 7px 0px;
+    /* padding: 7px 7px 7px 7px; */
     align-items: center;
     position: relative;
+    top: 25%;
     right: 7px;
-    object-fit: cover;
+    /* object-fit: cover; */
+    cursor: pointer;
 }
