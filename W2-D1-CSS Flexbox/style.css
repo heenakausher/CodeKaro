@@ -285,10 +285,11 @@
     display: flex;
     justify-content: center;
     padding-top: 7px;
-    padding-left: 40px;
-    padding-right: 40px;
+    /* padding-left: 40px; */
+    /* padding-right: 40px; */
     gap: 1px;
     box-sizing: border-box;
+    flex-shrink: 10;
     flex-wrap: wrap;
     box-sizing: border-box;
     margin-bottom: 6%;
@@ -296,7 +297,9 @@
 }
 
 .posts img{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 10;
     width: 20%;
     height: auto;
     max-width: 100%;
@@ -332,8 +335,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.496);
     border: none;
     background-color: white;
-    height: 8%;
-    width: 16%;
+    height: 60px;
+    width: 260px;
     justify-content: space-between;
     position: fixed;
     right: 20px;
