@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dribbble</title>
-    <link rel="icon" type="image/svg+xml" href="images/ball1.svg">
     <link href="./output.css" rel="stylesheet">
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
@@ -12,201 +11,31 @@
     @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
-    @keyframes card-animation{
-    from {transform: translateX(0);}
-    to {transform: translateX(calc(-50% - 15px));}
-}
-    .card-animation {
-    animation: card-animation 30s linear infinite;
-}
-
-.card-animation:hover {
-    animation-play-state: paused;
-}
     </style>
 </head>
-
-<body class="body flex mt-5 flex-col font-[Arial] max-[999px]:mt-2.5">
-    <div class="header text-[14px] flex flex-row flex-wrap shrink ml-5 items-center justify-between w-[97%] fixed top-0 pt-5 bg-white z-2 max-[999px]:ml-0 max-[999px]:justify-center max-[999px]:w-full ">
-        <div class="header1 flex items-center justify-evenly w-[10%] max-[999px]:w-full max-[999px]:flex max-[999px]:flex-wrap max-[999px]:justify-between">
-            <div class="logo flex cursor-pointer"> 
+<body class="m-0 p-0 h-screen">
+    <section class="container flex">
+        <div class="left flex-[70%] font-arial">
+            <div class="logo mt-9 cursor-pointer"> 
                 <svg xmlns="http://w3.org" viewBox="0 0 300 120" width="140" height="50" letter-spacing="2px" ; ><style>.brand-text {font-family: "Billabong", "Pacifico", "Brush Script MT", "Segoe Script", cursive; font-size: 55px; letter-spacing: 5px; fill: #0d0c22;}</style><g transform="rotate(-3)"><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" class="brand-text">Dribbble</text></g>
-            </svg>
-
+                </svg>
             </div>
-
-            <div class="searchbox flex items-center justify-between border-2 border-transparent bg-[rgba(211,211,211,0.2)] rounded-[40px] py-[5%] px-[4%] w-100 hover:bg-white hover:text-black hover:border-2 hover:border-[#ff5cce75] max-[999px]:justify-center max-[999px]:text-[12px] max-[999px]:w-[95%] max-[999px]:box-border max-[999px]:m-auto max-[999px]:py-[3%]">
-                <input type="text" placeholder="What are you looking for?" class="bg-transparent border-2 border-transparent font-[90%] max-[999px]:text-[15px]">
-                <div class="searchbox1 flex items-center justify-end border-2 border-transparent w-60 cursor-pointer max-[999px]:flex max-[999px]:box-border max-[999px]:text-[12px]">
-                    <select class="bg-transparent border-2 border-transparent font-bold cursor-pointer max-[999px]:text-[15px]">
-                        <option value="Shots">Shots</option>
-                        <option value="Designers">Designers</option>
-                        <option value="Services">Services</option>
-                    </select>
-                    <img class="img h-10 max-[999px]:h-7" src="images/magnifying-glass-svgrepo-com.svg" alt="searchicon">
-                </div>
-            </div>
-            
-            <div class="options flex justify-start items-center mr-[2%] ml-[2%] max-[999px]:hidden">
-            <select class="border-0 outline-0 font-bold cursor-pointer">
-                <option value="Explore">Explore</option>
-                <option value="Popular">Popular</option>
-                <option value="New and Noteworthy">New and Noteworthy</option>
-                <option value="Product Design">Product Design</option>
-                <option value="Web Design">Web Design</option>
-                <option value="Animation">Animation</option>
-                <option value="Branding">Branding</option>
-                <option value="Illustration">Illustration</option>
-                <option value="Mobile">Mobile</option>
-                <option value="Typography">Typography</option>
-                <option value="Print">Print</option>
-            </select>
-
-            <select class="border-0 outline-0 font-bold cursor-pointer">
-                <option value="Hire Talent">Hire Talent</option>
-                <option value="Start Project Brief">Start Project Brief</option>
-                <option value="Browse Profiles">Browse Profiles</option>
-                <option value="Explore Services">Explore Services</option>
-            </select>
-
-            <select class="border-0 outline-0 font-bold cursor-pointer">
-                <option value="Get Hired">Get Hired</option>
-                <option value="Browse Project Brief">Browse Project Brief</option>
-                <option value="Send Outbound Proposal">Send Outbound Proposal</option>
-                <option value="Add Service">Add Service</option>
-            </select>
-
-            <select class="border-0 outline-0 font-bold cursor-pointer">
-                <option value="Community">Community</option>
-                <option value="Blog">Blog</option>
-                <option value="Playoffs">Playoffs</option>
-                <option value="Help Center">Help Center</option>
-            </select>
-            </div>
+            <div class="card1 flex justify-center mt-8 mx:auto"><img class="h-14 w-auto" src="ball.PNG"></div>
+            <div class="card2 text-[23px] font-bold mt-3 m-2.5 text-center"><h1>Welcome to Dribbble</h1></div>
+            <div class="card3 flex text-[14px] my-2.5 mx-auto w-75 text-center mb-5">Create your account and discover world-class design talent.</div>
+            <button class="card4 flex text-[14px] font-semibold text-gray-800 my-2.5 mx-auto gap-20 p-3 rounded-[50px] w-87.5 bg-white border border-gray-300 cursor-pointer hover:bg-[#F0F4FF]">
+                <img src="google-logo.svg" class="h-5 w-auto">
+                Continue with Google</button>
+            <div class="card5 text-[14px] text-gray-500 m-2.5 text-center mt-5 mb-5">or</div>
+            <div class="card6 text-[14px] my-2.5 mx-auto p-3 rounded-lg border border-gray-300 w-87.5 mb-7.5 hover:border-gray-400"><input class="border-none" type="text" placeholder="Enter email address"></div>
+            <button class="card7 flex text-[14px] font-semibold my-2.5 mx-auto p-3 rounded-[50px] w-87.5 bg-black text-white justify-center mb-5.5 hover:bg-gray-900">Continue</button>
+            <div class="card8 text-[13px] m-2.5 text-gray-500 text-center mb-5.5">By continuing, you agree to our Terms and Privacy Policy.</div>
+            <div class="card9 text-[13px] m-2.5 text-gray-500 text-center">Already have an account? Sign in</div>
         </div>
-        <div class="auth-buttons flex w-[11%] justify-between max-[999px]:absolute max-[999px]:top-3.75 max-[999px]:right-6 max-[999px]:w-auto">
-            <button class="button1 bg-white text-black border-0 font-bold cursor-pointer max-[999px]:hidden">Sign up</button>
-            <button class="button2 bg-black text-white border-0 rounded-[50px] py-4 px-6.25 font-bold cursor-pointer max-[999px]:py-2.5 max-[999px]:px-4">Log in</button>
+        <div class="right flex-[30%] object-contain">
+            <video class="video w-full h-screen object-cover" src="mush.mp4" autoplay muted loop></video>
         </div>
-    </div>
-
-    <div class="discount text-[14px] inline-flex m-auto mt-[6%] bg-[rgb(251,243,249)] rounded-[50px] items-center justify-center gap-2.5 pt-3.25 pb-3.25 relative z-1 w-[99%] max-[999px]:mr-auto max-[999px]:pl-5 max-[999px]:pr-5 max-[999px]:box-border max-[999px]:text-[12px] max-[999px]:mt-32.5">
-    <p>Get 20% off your first payment for design and development services on Dribbble.
-    Use code WELCOME20🎉</p>
-    <button class="button3 border-0 bg-white text-black rounded-[30px] py-2.5 px-5 font-bold cursor-pointer max-[999px]:2.5">Get Started</button>
-    <p>x</p>
-    </div>
-
-    <div class="section1 my-[4%] mx-auto w-[75%] max-[999px]:my-[4%] max-[999px]:w-[90%]">
-        <div class="landingpage flex font-bold text-[25px] max-[999px]:text-[25px] max-[999px]:mt-5"> 
-            <h1>Design course landing page — Untitled UI</h1>
-        </div>
-        <div class="profile flex bg-white justify-between pt-10 pb-3 sticky top-20 w-full max-[999px]:flex-col max-[999px]:top-27">
-            <div class="profile1 flex items-center w-[20%] gap-[7%]">
-                <img class="profile2 flex rounded-[50%] h-12.5 w-12.5 max-[999px]:h-[40%]" src="images/jordan.webp" alt="">
-                <div class="name">
-                    <p class="name1 flex font-bold mb-0 gap-1 whitespace-nowrap cursor-pointer max-[999px]:flex max-[999px]:text-[14px] ">Jordan Hughes<svg xmlns="http://www.w3.org/2000/svg" width="8px" height="16px" fill="currentColor" class="bi bi-r-circle" viewBox="0 0 16 16"><path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.5 4.002h3.11c1.71 0 2.741.973 2.741 2.46 0 1.138-.667 1.94-1.495 2.24L11.5 12H9.98L8.52 8.924H6.836V12H5.5zm1.335 1.09v2.777h1.549c.995 0 1.573-.463 1.573-1.36 0-.913-.596-1.417-1.537-1.417z"/></svg></p>
-                    <p class="name2 mt-0 text-[11px] text-[rgb(133,133,133)] cursor-pointer max-[999px]:text-[11px]">Follow</p>
-                </div>
-            </div>
-            <div class="icons flex items-center justify-evenly w-[22%] max-[999px]:w-full max-[999px]:justify-end max-[999px]:gap-[2%]">
-                <svg class="icons1 border border-[rgb(211,211,211)] rounded-full w-4 h-4 p-2.5 box-content cursor-pointer max-[999px]:h-2.5 max-[999px]:w-2.5 max-[999px]:p-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.7 4C18.87 4 21 6.98 21 9.76C21 15.39 12.16 20 12 20C11.84 20 3 15.39 3 9.76C3 6.98 5.13 4 8.3 4C10.12 4 11.31 4.91 12 5.71C12.69 4.91 13.88 4 15.7 4Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                <svg class="icons1 border border-[rgb(211,211,211)] rounded-[50%] w-4 h-4 p-2.5 box-content cursor-pointer max-[999px]:h-2.5 max-[999px]:w-2.5 max-[999px]:p-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 6.2C5 5.07989 5 4.51984 5.21799 4.09202C5.40973 3.71569 5.71569 3.40973 6.09202 3.21799C6.51984 3 7.07989 3 8.2 3H15.8C16.9201 3 17.4802 3 17.908 3.21799C18.2843 3.40973 18.5903 3.71569 18.782 4.09202C19 4.51984 19 5.07989 19 6.2V21L12 16L5 21V6.2Z" stroke="#000000" stroke-width="2" stroke-linejoin="round"></path> </g></svg>
-                <button class="button4 bg-black text-[13px] text-white rounded-[50px] py-3 px-5 border-0 font-bold cursor-pointer hover:bg-[rgb(38,38,38,0.544)] max-[999px]:flex max-[999px]:h-3 max-[999px]:whitespace-nowrap max-[999px]:py-4 max-[999px]:w-25 max-[999px]:justify-center max-[999px]:items-center">Get in touch</button>
-            </div>
-        </div>
-        <img class="shot1 w-full mt-[3%] rounded-[14px] cursor-pointer" src="images/ss1.webp" alt="">
-        <p class="text1 mt-[6%] ml-[13%] text-[21px] max-[999px]:text-[14px]">Super simple design and Figma online course landing page.</p>
-        <img class="shot1 w-full mt-[3%] rounded-[14px] cursor-pointer" src="images/ss2.webp" alt="">
-        <img class="shot1 w-full mt-[3%] rounded-[14px] cursor-pointer" src="images/ss3.webp" alt="">
-        <div class="text2 m-[11%] text-[21px] max-[999px]:text-[17px]">
-            <p>❖ Made with Untitled UI and Untitled UI Icons</p>
-
-            <h1 class="text3 text-[27px] font-bold mt-[7%] mb-[7%] max-[999px]:text-[21px]">Made with Untitled UI</h1>
-            <p>Untitled UI is the largest Figma UI kit and design system in the world. Kickstart any project, 
-            save thousands of hours, and level up as a designer.</p>
-
-            <h1 class="text3 text-[27px] font-bold mt-[7%] mb-[7%] max-[999px]:text-[21px]">Untitled UI Icons</h1>
-            <p>Untitled UI Icons are a clean, consistent, and neutral icon library crafted specifically for 
-            modern UI design. Made for Figma, in Figma.</p>
-        </div>
-        <div class="boxB flex flex-col gap-4 absolute right-3 top-120 max-[999px]:flex max-[999px]:flex-row max-[999px]:relative max-[999px]:my-[7%] max-[999px]:mx-[23%] max-[999px]:top-5 max-[999px]:left-9">
-            <svg class="icons2 border border-[rgb(211,211,211)] rounded-[50%] w-4 h-4 p-2.5 box-content cursor-pointer" viewBox="-3.6 -3.6 31.20 31.20" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier" stroke-width="2.0"> <path stroke-width="2.0" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22Z" stroke="#000000" stroke-width="2.5"></path> </g>
-            </svg>
-            <svg class="icons2 border border-[rgb(211,211,211)] rounded-[50%] w-4 h-4 p-2.5 box-content cursor-pointer" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier" stroke-width="2.0"> <path stroke-width="2.0" d="M12.5535 2.49392C12.4114 2.33852 12.2106 2.25 12 2.25C11.7894 2.25 11.5886 2.33852 11.4465 2.49392L7.44648 6.86892C7.16698 7.17462 7.18822 7.64902 7.49392 7.92852C7.79963 8.20802 8.27402 8.18678 8.55352 7.88108L11.25 4.9318V16C11.25 16.4142 11.5858 16.75 12 16.75C12.4142 16.75 12.75 16.4142 12.75 16V4.9318L15.4465 7.88108C15.726 8.18678 16.2004 8.20802 16.5061 7.92852C16.8118 7.64902 16.833 7.17462 16.5535 6.86892L12.5535 2.49392Z" fill="#000000"></path> <path d="M3.75 15C3.75 14.5858 3.41422 14.25 3 14.25C2.58579 14.25 2.25 14.5858 2.25 15V15.0549C2.24998 16.4225 2.24996 17.5248 2.36652 18.3918C2.48754 19.2919 2.74643 20.0497 3.34835 20.6516C3.95027 21.2536 4.70814 21.5125 5.60825 21.6335C6.47522 21.75 7.57754 21.75 8.94513 21.75H15.0549C16.4225 21.75 17.5248 21.75 18.3918 21.6335C19.2919 21.5125 20.0497 21.2536 20.6517 20.6516C21.2536 20.0497 21.5125 19.2919 21.6335 18.3918C21.75 17.5248 21.75 16.4225 21.75 15.0549V15C21.75 14.5858 21.4142 14.25 21 14.25C20.5858 14.25 20.25 14.5858 20.25 15C20.25 16.4354 20.2484 17.4365 20.1469 18.1919C20.0482 18.9257 19.8678 19.3142 19.591 19.591C19.3142 19.8678 18.9257 20.0482 18.1919 20.1469C17.4365 20.2484 16.4354 20.25 15 20.25H9C7.56459 20.25 6.56347 20.2484 5.80812 20.1469C5.07435 20.0482 4.68577 19.8678 4.40901 19.591C4.13225 19.3142 3.9518 18.9257 3.85315 18.1919C3.75159 17.4365 3.75 16.4354 3.75 15Z" fill="#000000"></path> </g>
-            </svg>
-            <svg class="icons2 border border-[rgb(211,211,211)] rounded-[50%] w-4 h-4 p-2.5 box-content cursor-pointer" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="12" cy="12" r="10" stroke="#000000" stroke-width="2.0"></circle> <path d="M12 17V11" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <circle cx="1" cy="1" r="1" transform="matrix(1 0 0 -1 11 9)" fill="#000000"></circle> </g>
-            </svg>
-        </div>
-        <img class="profile3 rounded-[50%] h-22.5 mb-5 mx-[46%] cursor-pointer max-[999px]:h-19 max-[999px]:mt-13 max-[999px]:mx-[36%] max-[999px]:ml-[43%]" src="images/jordan.webp" alt="">
-        <h1 class="text4 text-[22px] flex justify-center cursor-pointer max-[999px]:text-[19px] max-[999px]:font-bold max-[999px]:ml-auto">Jordan Hughes<svg xmlns="http://www.w3.org/2000/svg" width="10px" height="18px" fill="currentColor" class="bi bi-r-circle" viewBox="0 0 16 16"><path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.5 4.002h3.11c1.71 0 2.741.973 2.741 2.46 0 1.138-.667 1.94-1.495 2.24L11.5 12H9.98L8.52 8.924H6.836V12H5.5zm1.335 1.09v2.777h1.549c.995 0 1.573-.463 1.573-1.36 0-.913-.596-1.417-1.537-1.417z"/></svg></h1>
-        <p class="text5 text-[15px] flex justify-center text-[rgb(138,136,136)] max-[999px]:text-[14px] max-[999px]:my-2 max-[999px]:ml-auto">❖ You've come to the right place ✌️</p>
-        <div><button class="button5 flex bg-black text-[12px] text-white rounded-[50px] border-0 py-2.5 px-5.5 font-bold ml-[44.5%] mt-3 cursor-pointer hover:bg-[rgb(38,38,38,0.544)] max-[999px]:py-2 max-[999px]:mx-5.5 max-[999px]:ml-[38%]">Get in touch</button></div>
-        <div class="newtext flex justify-between mt-[8%]">
-            <h1 class="text6 text-[16px] font-bold max-[999px]:text-[18px] max-[999px]:mb-4">More by Jordan Hughes®</h1>
-            <p class="text7 text-[14px] text-[rgb(115,115,115)] cursor-pointer max-[999px]:text-[14px] max-[999px]:text-[rgb(115,115,115)]">View profile</p>
-        </div>
-        <div class="shot2 flex w-64 h-auto gap-9.5 justify-evenly mr-[15%] mb-[20%] cursor-pointer max-[999px]:flex-col max-[999px]:w-full max-[999px]:gap-10 max-[999px]:justify-evenly max-[999px]:mb-[20%]">
-            <img class="a1 rounded-[10px]" src="images/ss4.webp">
-            <img class="a1 rounded-[10px]" src="images/ss5.webp">
-            <img class="a1 rounded-[10px]" src="images/ss6.webp">
-            <img class="a1 rounded-[10px]" src="images/ss7.webp">
-        </div>
-    </div>
-    <div class="marquee w-full mb-[5%] overflow-hidden max-[999px]:mt-[25%]">
-        <div class="marquee-moves flex gap-7.5 w-max card-animation">
-            <div class="marq-text text-[14px] text-[rgba(6,6,42,0.808)] font-bold"> <img class="marq-img flex rounded-lg h-37.5 object-cover mb-5" src="images/marq1.webp" alt="marquee"> <h1>Web Design</h1> </div>
-            <div class="marq-text text-[14px] text-[rgba(6,6,42,0.808)] font-bold"> <img class="marq-img flex rounded-lg h-37.5 object-cover mb-5" src="images/marq2.webp" alt="marquee"> <h1>Illustration</h1> </div>
-            <div class="marq-text text-[14px] text-[rgba(6,6,42,0.808)] font-bold"> <img class="marq-img flex rounded-lg h-37.5 object-cover mb-5" src="images/marq3.webp" alt="marquee"> <h1>Mobile</h1> </div>
-            <div class="marq-text text-[14px] text-[rgba(6,6,42,0.808)] font-bold"> <img class="marq-img flex rounded-lg h-37.5 object-cover mb-5" src="images/marq4.webp" alt="marquee"> <h1>Print</h1> </div>
-            <div class="marq-text text-[14px] text-[rgba(6,6,42,0.808)] font-bold"> <img class="marq-img flex rounded-lg h-37.5 object-cover mb-5" src="images/marq5.webp" alt="marquee"> <h1>Typography</h1> </div>
-            <div class="marq-text text-[14px] text-[rgba(6,6,42,0.808)] font-bold"> <img class="marq-img flex rounded-lg h-37.5 object-cover mb-5" src="images/marq6.webp" alt="marquee"> <h1>Product Design</h1> </div>
-            <div class="marq-text text-[14px] text-[rgba(6,6,42,0.808)] font-bold"> <img class="marq-img flex rounded-lg h-37.5 object-cover mb-5" src="images/marq7.webp" alt="marquee"> <h1>Branding</h1> </div>
-            <div class="marq-text text-[14px] text-[rgba(6,6,42,0.808)] font-bold"> <img class="marq-img flex rounded-lg h-37.5 object-cover mb-5" src="images/marq8.webp" alt="marquee"> <h1>Animation</h1> </div>
-            <div class="marq-text text-[14px] text-[rgba(6,6,42,0.808)] font-bold"> <img class="marq-img flex rounded-lg h-37.5 object-cover mb-5" src="images/marq1.webp" alt="marquee"> <h1>Web Design</h1> </div>
-            <div class="marq-text text-[14px] text-[rgba(6,6,42,0.808)] font-bold"> <img class="marq-img flex rounded-lg h-37.5 object-cover mb-5" src="images/marq2.webp" alt="marquee"> <h1>Illustration</h1> </div>
-            <div class="marq-text text-[14px] text-[rgba(6,6,42,0.808)] font-bold"> <img class="marq-img flex rounded-lg h-37.5 object-cover mb-5" src="images/marq3.webp" alt="marquee"> <h1>Mobile</h1> </div>
-            <div class="marq-text text-[14px] text-[rgba(6,6,42,0.808)] font-bold"> <img class="marq-img flex rounded-lg h-37.5 object-cover mb-5" src="images/marq4.webp" alt="marquee"> <h1>Print</h1> </div>
-            <div class="marq-text text-[14px] text-[rgba(6,6,42,0.808)] font-bold"> <img class="marq-img flex rounded-lg h-37.5 object-cover mb-5" src="images/marq5.webp" alt="marquee"> <h1>Typography</h1> </div>
-            <div class="marq-text text-[14px] text-[rgba(6,6,42,0.808)] font-bold"> <img class="marq-img flex rounded-lg h-37.5 object-cover mb-5" src="images/marq6.webp" alt="marquee"> <h1>Product Design</h1> </div>
-            <div class="marq-text text-[14px] text-[rgba(6,6,42,0.808)] font-bold"> <img class="marq-img flex rounded-lg h-37.5 object-cover mb-5" src="images/marq7.webp" alt="marquee"> <h1>Branding</h1> </div>
-            <div class="marq-text text-[14px] text-[rgba(6,6,42,0.808)] font-bold"> <img class="marq-img flex rounded-lg h-37.5 object-cover mb-5" src="images/marq8.webp" alt="marquee"> <h1>Animation</h1> </div>
-        </div>
-    </div>
-    <div class="footerA flex justify-evenly items-center cursor-pointer max-[999px]:flex-col max-[999px]:mt-[10%]">
-        <div class="footer1">
-        <svg xmlns="http://w3.org" viewBox="0 0 300 120" width="140" height="50" letter-spacing="2px" ; ><style>.brand-text {font-family: "Billabong", "Pacifico", "Brush Script MT", "Segoe Script", cursive; font-size: 55px; letter-spacing: 5px; fill: #0d0c22;}</style><g transform="rotate(-3)"><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" class="brand-text">Dribbble</text></g>
-            </svg></div>
-        <div class="footer2 flex w-[70%] gap-[5%] text-[14px] font-bold justify-center max-[999px]:flex-wrap max-[999px]:text-[14px] max-[999px]:my-5 max-[999px]:gap-5">
-            <p>For designers</p><p>Hire talent</p><p>Inspiration</p><p>Advertising</p>
-            <p>Blog</p><p>About</p><p>Careers</p><p>Support</p></div>
-        <div class="footer3 flex gap-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-            </svg>
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-            </svg>
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-            </svg>
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
-            <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
-            </svg>
-        </div>
-    </div>
-    <div class="footerB flex justify-evenly items-center mt-[4%] cursor-pointer max-[999px]:flex-col max-[999px]:mt-[10%]">
-        <div class="footer4 flex w-[70%] gap-[3%] text-[14px] mb-14 justify-center text-[rgb(139,139,139)] max-[999px]:flex-wrap max-[999px]:text-[14px] max-[999px]:text-[rgb(139,139,139)] max-[999px]:mb-2">
-            <p>©2026</p><p>Dribbble</p><p>Terms</p><p>Privacy</p><p>Cookies</p>
-        </div>
-        <div class="footer4 flex w-[70%] gap-[3%] text-[14px] mb-14 justify-center text-[rgb(139,139,139)] max-[999px]:flex-wrap max-[999px]:text-[14px] max-[999px]:text-[rgb(139,139,139)]">
-            <p>Jobs</p><p>Tags</p><p>Places</p><p>Resources</p>
-        </div>
-    </div>
-
-
+    </section>
 </body>
+
 </html>
