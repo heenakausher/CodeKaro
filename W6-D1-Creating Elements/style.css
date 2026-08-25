@@ -1,0 +1,20 @@
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 19% 35%;
+    background-color: #ff5733;
+}
+
+.heading{
+    display: flex;
+    color: black;
+}
+
+.btn{
+    display: flex;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    border: none;
+    padding: 2%
+}
