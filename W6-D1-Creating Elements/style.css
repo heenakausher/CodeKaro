@@ -16,5 +16,6 @@
     background-color: black;
     border-radius: 50px;
     border: none;
-    padding: 2%
+    padding: 2%;
+    cursor: pointer;
 }
