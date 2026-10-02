@@ -1,9 +1,9 @@
 function TouristPlace({place}){
     return(
-        <div className=" p-5">
+        <div className="flex flex-col h-full cursor-pointer transition-transform duration-500 hover:scale-105 p-5">
             <img className="w-full h-78 object-cover rounded-xl" src={place.img} alt={place.placename} />
             <h2 className="text-2xl font-bold mt-3">{place.placeName}</h2>
-            <p className="mt-2">{place.desc}</p>
+            <p className="mt-2 text-[12px] flex-grow">{place.desc}</p>
             <p className="mt-2">Rating: ⭐{place.ratings}</p>
             <p className="">Price: ₹{place.price}</p>
             {place.price < 12000 
